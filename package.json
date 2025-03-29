@@ -2,6 +2,9 @@
   "name": "workspace-environment",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "@google-cloud/local-auth": "^3.0.1",
     "@monaco-editor/react": "^4.6.0",
@@ -25,8 +28,8 @@
     "util": "^0.12.5"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "start": "GENERATE_SOURCEMAP=false react-app-rewired start",
+    "build": "GENERATE_SOURCEMAP=false react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
