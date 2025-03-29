@@ -1,0 +1,138 @@
+.workspace {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1e1e1e;
+  position: relative;
+}
+
+.window-container {
+  position: absolute;
+}
+
+.window {
+  background-color: #2d2d2d;
+  border: 1px solid #3d3d3d;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.window-header {
+  background-color: #3d3d3d;
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: move;
+}
+
+.window-header button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.window-content {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* React-resizable styles */
+.react-resizable {
+  position: relative;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  background-position: center;
+  padding: 0 3px 3px 0;
+}
+
+.react-resizable-handle-n {
+  top: -5px;
+  left: 50%;
+  margin-left: -10px;
+  cursor: n-resize;
+  height: 10px;
+  width: 100%;
+}
+
+.react-resizable-handle-e {
+  right: -5px;
+  top: 50%;
+  margin-top: -10px;
+  cursor: e-resize;
+  width: 10px;
+  height: 100%;
+}
+
+.react-resizable-handle-s {
+  bottom: -5px;
+  left: 50%;
+  margin-left: -10px;
+  cursor: s-resize;
+  height: 10px;
+  width: 100%;
+}
+
+.react-resizable-handle-w {
+  left: -5px;
+  top: 50%;
+  margin-top: -10px;
+  cursor: w-resize;
+  width: 10px;
+  height: 100%;
+}
+
+.react-resizable-handle-ne {
+  right: -5px;
+  top: -5px;
+  cursor: ne-resize;
+}
+
+.react-resizable-handle-nw {
+  left: -5px;
+  top: -5px;
+  cursor: nw-resize;
+}
+
+.react-resizable-handle-se {
+  right: -5px;
+  bottom: -5px;
+  cursor: se-resize;
+}
+
+.react-resizable-handle-sw {
+  left: -5px;
+  bottom: -5px;
+  cursor: sw-resize;
+}
+
+.context-menu {
+  background-color: #2d2d2d;
+  border: 1px solid #3d3d3d;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.context-menu button {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.context-menu button:hover {
+  background-color: #3d3d3d;
+} 
